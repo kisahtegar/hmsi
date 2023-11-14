@@ -1,0 +1,107 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: blue;
+}
+
+/* Logo Styles */
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Login Box Styles */
+.box {
+    /* Menetapkan lebar tetap untuk kotak */
+    width: 300px;
+    /* Menambahkan padding untuk spasi yang lebih baik di dalam kotak */
+    padding: 40px;
+    /* Memusatkan kotak secara horizontal dan vertikal di halaman */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Menetapkan warna latar belakang kotak menjadi putih */
+    background: white;
+}
+
+/* Style untuk heading utama dalam login box */
+.box h1 {
+    /* Menetapkan warna teks menjadi hitam */
+    color: black;
+    /* Mengubah teks menjadi huruf kapital untuk penekanan */
+    text-transform: uppercase;
+    /* Menetapkan tebal huruf menjadi 700 untuk penekanan */
+    font-weight: 700;
+    /* Memusatkan teks di dalam kotak */
+    text-align: center;
+}
+
+/* Style untuk input teks dan kata sandi di login box*/
+.box input[type="text"],
+.box input[type="password"] {
+    /* Menghapus batas dan latar belakang default */
+    border: 0;
+    background: none;
+    /* Memusatkan input dan menambahkan margin untuk spasi */
+    display: block;
+    margin: 20px auto;
+    /* Memusatkan teks di dalam input */
+    text-align: center;
+    /* Menambahkan batas ke input */
+    border: 3px solid rgb(206, 206, 206);
+    /* Menambahkan padding ke input */
+    padding: 14px 10px;
+    /* Menetapkan lebar tetap untuk input */
+    width: 220px;
+    /* Menghapus garis pinggir saat di-fokuskan */
+    outline: none;
+    /* Menetapkan warna teks menjadi putih */
+    color: black;
+    /* Menambahkan border-radius untuk tampilan melingkar */
+    border-radius: 10px;
+    /* Menambahkan efek transisi yang halus */
+    transition: 0.25s;
+}
+
+/* Gaya untuk keadaan input teks dan kata sandi yang difokuskan */
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    /* Mengubah warna batas menjadi biru saat difokuskan */
+    border-color: blue;
+}
+
+/* Style untuk tombol kirim login */
+.box input[type="submit"] {
+    /* Menghapus batas dan latar belakang default */
+    border: 0;
+    background: none;
+    /* Memusatkan tombol dan menambahkan margin untuk spasi */
+    display: block;
+    margin: 20px auto;
+    /* Memusatkan teks di dalam tombol */
+    text-align: center;
+    /* Menetapkan warna latar belakang menjadi biru */
+    background-color: blue;
+    /* Menambahkan batas ke tombol */
+    border: 2px solid black;
+    /* Menambahkan padding ke tombol */
+    padding: 14px 100px;
+    /* Menetapkan warna teks menjadi putih */
+    color: white;
+    /* Menambahkan border-radius untuk tampilan melingkar */
+    border-radius: 25px;
+    /* Menambahkan efek transisi yang halus */
+    transition: 0.25s;
+    /* Menggunakan kursor crosshair untuk interaksi yang berbeda */
+    cursor: crosshair;
+}
+
+/* Style untuk keadaan hover tombol kirim login */
+.box input[type="submit"]:hover {
+    /* Mengubah warna latar belakang menjadi hijau saat dihover */
+    background: green;
+}
